@@ -5,7 +5,8 @@
   "scripts": {
     "release": "release-it",
     "build": "rollup --config",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "rollup --config"
   },
   "workspaces": [
     "packages/@react-editor-js/*",
