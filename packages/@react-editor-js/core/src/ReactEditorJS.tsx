@@ -19,7 +19,7 @@ function ReactEditorJS({
 
   const editorJS = React.useRef<EditorCore | null>(null)
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     editorJS.current = factory({
       holder: memoizedHolder.current,
       ...(defaultValue && { data: defaultValue }),
