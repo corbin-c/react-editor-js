@@ -23,6 +23,4 @@ jobs:
           key: react-editor-js-${{ hashFiles('**/yarn.lock') }}
       - run: yarn
       - run: yarn build
-      - run: git config user.email "o1o9814@naver.com"
-      - run: git config user.name "Jungwoo-An"
       - run: yarn release --ci
